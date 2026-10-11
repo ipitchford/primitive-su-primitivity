@@ -1,0 +1,682 @@
+{
+  "schema": "primitive-su-bounded-orbit-diagnostic-v2",
+  "status": "bounded computational diagnostic only",
+  "scope": {
+    "N_values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "input_contract": "count(N) accepts positive even integers only",
+    "purpose": "finite orbit/rank checks and the excluded N=2 boundary sanity check"
+  },
+  "field_definitions": {
+    "resolved_objects_over_electron_invariant_parent_orbits": "resolved contributions above parent H-orbits preserved by one-step rotation; this does not count individually electron-fixed resolved objects",
+    "parent_pair_witnesses": "parent-label orbit facts; the N>=4 entries have full period and a distinct even-subgroup orbit after one-step rotation"
+  },
+  "limits": [
+    "Finite enumeration is not the universal proof.",
+    "The computation assumes the separately audited cyclic-resolution interpretation.",
+    "It does not determine the electron permutation within a resolved short orbit.",
+    "The N=2 boundary passes strict rank dominance but fails the distinct-pair witness."
+  ],
+  "results": [
+    {
+      "N": 2,
+      "labels": 3,
+      "orbit_counts": [
+        {
+          "2": 1
+        },
+        {
+          "1": 1
+        }
+      ],
+      "ranks": [
+        2,
+        1
+      ],
+      "resolved_objects_over_electron_invariant_parent_orbits": [
+        0,
+        1
+      ],
+      "rank_strictly_below_neutral_sectors": [
+        1
+      ],
+      "parent_pair_witnesses": [
+        {
+          "q": 1,
+          "label": [
+            1,
+            1
+          ],
+          "full_period": 1,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": false
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "labels": 35,
+      "orbit_counts": [
+        {
+          "4": 2,
+          "2": 1
+        },
+        {
+          "4": 2
+        },
+        {
+          "4": 2,
+          "1": 1
+        },
+        {
+          "4": 2
+        }
+      ],
+      "ranks": [
+        8,
+        4,
+        6,
+        4
+      ],
+      "resolved_objects_over_electron_invariant_parent_orbits": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "rank_strictly_below_neutral_sectors": [
+        1,
+        2,
+        3
+      ],
+      "parent_pair_witnesses": [
+        {
+          "q": 1,
+          "label": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "full_period": 4,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 2,
+          "label": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "full_period": 4,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 3,
+          "label": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "full_period": 4,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        }
+      ]
+    },
+    {
+      "N": 6,
+      "labels": 462,
+      "orbit_counts": [
+        {
+          "6": 13,
+          "2": 1
+        },
+        {
+          "6": 12,
+          "3": 1
+        },
+        {
+          "6": 13
+        },
+        {
+          "6": 12,
+          "3": 1,
+          "1": 1
+        },
+        {
+          "6": 13
+        },
+        {
+          "6": 12,
+          "3": 1
+        }
+      ],
+      "ranks": [
+        32,
+        25,
+        26,
+        28,
+        26,
+        25
+      ],
+      "resolved_objects_over_electron_invariant_parent_orbits": [
+        0,
+        1,
+        0,
+        4,
+        0,
+        1
+      ],
+      "rank_strictly_below_neutral_sectors": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_pair_witnesses": [
+        {
+          "q": 1,
+          "label": [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 6,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 2,
+          "label": [
+            5,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "full_period": 6,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 3,
+          "label": [
+            5,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "full_period": 6,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 4,
+          "label": [
+            5,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "full_period": 6,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 5,
+          "label": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "full_period": 6,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "labels": 6435,
+      "orbit_counts": [
+        {
+          "8": 100,
+          "4": 2,
+          "2": 1
+        },
+        {
+          "8": 100
+        },
+        {
+          "8": 100,
+          "4": 2
+        },
+        {
+          "8": 100
+        },
+        {
+          "8": 100,
+          "4": 2,
+          "1": 1
+        },
+        {
+          "8": 100
+        },
+        {
+          "8": 100,
+          "4": 2
+        },
+        {
+          "8": 100
+        }
+      ],
+      "ranks": [
+        216,
+        200,
+        208,
+        200,
+        212,
+        200,
+        208,
+        200
+      ],
+      "resolved_objects_over_electron_invariant_parent_orbits": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "rank_strictly_below_neutral_sectors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "parent_pair_witnesses": [
+        {
+          "q": 1,
+          "label": [
+            7,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 2,
+          "label": [
+            7,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 3,
+          "label": [
+            7,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 4,
+          "label": [
+            7,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 5,
+          "label": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 6,
+          "label": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 7,
+          "label": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "full_period": 8,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        }
+      ]
+    },
+    {
+      "N": 10,
+      "labels": 92378,
+      "orbit_counts": [
+        {
+          "10": 925,
+          "2": 1
+        },
+        {
+          "10": 920,
+          "5": 5
+        },
+        {
+          "10": 925
+        },
+        {
+          "10": 920,
+          "5": 5
+        },
+        {
+          "10": 925
+        },
+        {
+          "10": 920,
+          "5": 5,
+          "1": 1
+        },
+        {
+          "10": 925
+        },
+        {
+          "10": 920,
+          "5": 5
+        },
+        {
+          "10": 925
+        },
+        {
+          "10": 920,
+          "5": 5
+        }
+      ],
+      "ranks": [
+        1860,
+        1845,
+        1850,
+        1845,
+        1850,
+        1850,
+        1850,
+        1845,
+        1850,
+        1845
+      ],
+      "resolved_objects_over_electron_invariant_parent_orbits": [
+        0,
+        5,
+        0,
+        5,
+        0,
+        10,
+        0,
+        5,
+        0,
+        5
+      ],
+      "rank_strictly_below_neutral_sectors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_pair_witnesses": [
+        {
+          "q": 1,
+          "label": [
+            9,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 2,
+          "label": [
+            9,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 3,
+          "label": [
+            9,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 4,
+          "label": [
+            9,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 5,
+          "label": [
+            9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 6,
+          "label": [
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 7,
+          "label": [
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 8,
+          "label": [
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        },
+        {
+          "q": 9,
+          "label": [
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "full_period": 10,
+          "even_subgroup_stabiliser_order": 1,
+          "one_step_rotation_has_distinct_even_orbit": true
+        }
+      ]
+    }
+  ]
+}

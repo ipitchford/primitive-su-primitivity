@@ -1,0 +1,35 @@
+{
+  "title": "Primitivity of the SU(2n)₂ₙ superconducting series",
+  "publication_date": "2026-10-11",
+  "description": "Unrefereed written-proof candidate. The manuscript proposes a uniform proof that the charge-one SU(2n)_{2n} superconducting series is primitive for every n greater than one. The argument combines a strict rank inequality for every nonzero flux sector with an electron-pair obstruction to the remaining Ising-type factor. The construction, definition and counting ingredients are prior work; the claimed advance is their uniform primitivity application. Finite computations check the formulas but do not establish the universal theorem. Internal review is not external peer review, formal verification or unaffiliated reproduction. Original research content is CC0-1.0; original code is MIT. See the component-level licence map in the final release package.",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Anonymous",
+      "affiliation": null
+    }
+  ],
+  "keywords": [
+    "topological superconductivity",
+    "SU(2n) WZW theory",
+    "anyon condensation",
+    "simple currents",
+    "primitivity"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/primitive-su-primitivity",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "version": "1.1.0-candidate",
+  "license": "cc-zero",
+  "imprint_publisher": "Zenodo",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "prereserve_doi": {
+    "doi": "10.5281/zenodo.23299598",
+    "recid": 23299598
+  }
+}

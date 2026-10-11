@@ -1,0 +1,91 @@
+{
+  "schema": "primitive-su-divisor-formula-check-v2",
+  "status": "finite formula verification only",
+  "scope": {
+    "direct_enumeration_N_values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "strict_rank_checks_even_N_from": 2,
+    "strict_rank_checks_even_N_through": 100,
+    "quantitative_gap_checks_even_N_from": 4,
+    "quantitative_gap_checks_even_N_through": 100,
+    "quantitative_gap_lower_bound": "R_0 - R_q >= N/2 for every nonzero q",
+    "input_contract": "ranks(N) accepts positive even integers only"
+  },
+  "direct_checks": [
+    {
+      "N": 2,
+      "ranks": [
+        2,
+        1
+      ],
+      "direct_match": true
+    },
+    {
+      "N": 4,
+      "ranks": [
+        8,
+        4,
+        6,
+        4
+      ],
+      "direct_match": true
+    },
+    {
+      "N": 6,
+      "ranks": [
+        32,
+        25,
+        26,
+        28,
+        26,
+        25
+      ],
+      "direct_match": true
+    },
+    {
+      "N": 8,
+      "ranks": [
+        216,
+        200,
+        208,
+        200,
+        212,
+        200,
+        208,
+        200
+      ],
+      "direct_match": true
+    },
+    {
+      "N": 10,
+      "ranks": [
+        1860,
+        1845,
+        1850,
+        1845,
+        1850,
+        1850,
+        1850,
+        1845,
+        1850,
+        1845
+      ],
+      "direct_match": true
+    }
+  ],
+  "quantitative_gap_equality_witness": {
+    "N": 4,
+    "q": 2,
+    "gap": 2
+  },
+  "limits": [
+    "Finite verification is not the universal proof.",
+    "The checks do not establish the categorical interpretation of the ranks.",
+    "The N=2 rank inequality does not supply the distinct electron-pair witness."
+  ]
+}

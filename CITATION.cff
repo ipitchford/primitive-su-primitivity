@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Retain the unrefereed candidate status and specified construction."
+title: "Primitivity of the SU(2n)₂ₙ superconducting series"
+authors:
+  - name: Anonymous
+version: 1.1.0-candidate
+doi: 10.5281/zenodo.23299598
+date-released: 2026-10-11
+license:
+  - CC0-1.0
+  - MIT
+repository-code: https://github.com/ipitchford/primitive-su-primitivity
+abstract: >-
+  Written-proof candidate for primitivity of the specified charge-one
+  SU(2n) superconducting construction for every n greater than one.
+  A resolved-rank gap and an explicit electron-paired object exclude
+  the two allowed vortex factors. Counting ingredients and the family
+  are prior work. Finite checks do not prove the universal statement.
+  No microscopic realization, experimental validation or formal verification
+  is claimed.

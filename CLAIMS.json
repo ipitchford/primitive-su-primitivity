@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0",
+  "package": "primitive-su-primitivity",
+  "title": "Primitivity of the SU(2n)_{2n} superconducting series",
+  "version": "1.1.0-candidate",
+  "status": "candidate-not-published",
+  "scholarlyCreator": "Anonymous",
+  "repository": {
+    "anticipatedUrl": "https://github.com/ipitchford/primitive-su-primitivity",
+    "publicReadbackVerified": false
+  },
+  "doi": {
+    "value": "10.5281/zenodo.23299598",
+    "status": "reserved-draft-not-published",
+    "resolverVerified": false
+  },
+  "assuranceBoundary": "The universal primitivity result is a written analytic proof claim. Finite exact computations test formulas and implementations only; they are not formal proof, physical validation, independent human peer review, exhaustive novelty certification, an official REF decision, or completed publication.",
+  "claims": [
+    {
+      "id": "C1-uniform-primitivity",
+      "kind": "analytic-theorem",
+      "status": "proved-in-candidate-manuscript",
+      "statement": "For every even N=2n>=4 in the specified charge-one SU(N)_N construction and every nonzero q modulo N, the resolved sector rank satisfies R_0-R_q>=N/2 and the sector contains two distinct simple objects exchanged by electron fusion. The rank-electron obstruction therefore excludes every allowed electron-compatible invertible-superconductor vortex factor, including Abelian-dressed factors, and the family is primitive in the originating sense.",
+      "locator": "paper.tex, main theorem and Sections 1-4",
+      "hypotheses": [
+        "unitary SU(N)_N WZW modular category with N even and N>=4",
+        "the charge-one fermionic simple-current construction of Gao et al.",
+        "physical electron retained",
+        "fine flux sectors q in Z/N",
+        "electron-compatible factorisation convention of the originating definition"
+      ],
+      "dependencies": [
+        "C2-induction-bridge",
+        "C3-cyclic-resolution-rank",
+        "C4-known-charge-maximum",
+        "C5-absolute-rank-gap",
+        "C6-rank-electron-obstruction",
+        "C7-electron-pair"
+      ],
+      "evidence": [
+        "paper.tex",
+        "paper.md",
+        "claims.md",
+        "review-response.md"
+      ],
+      "limits": [
+        "not a new construction of the family",
+        "not a complete fusion-rule or crossed-braiding classification",
+        "not a microscopic or experimental result",
+        "not formally verified"
+      ]
+    },
+    {
+      "id": "C2-induction-bridge",
+      "kind": "analytic-lemma",
+      "status": "proved-in-candidate-manuscript",
+      "statement": "The parity-zero sector of the charge-one fermionic condensate is represented by modules over the even subgroup algebra A=sum_{g in <J^2>} g; its simple objects are the resolved even-subgroup orbits, and the image of J acts as the retained physical electron while the original fine charge grading remains in force.",
+      "locator": "paper.tex, Section 2, Lemma 1",
+      "evidence": [
+        "paper.tex",
+        "SOURCES.md",
+        "CITATION_AUDIT.md"
+      ],
+      "limits": [
+        "uses all A-modules, not only local modules",
+        "specific to the stated charge-one construction and grading"
+      ]
+    },
+    {
+      "id": "C3-cyclic-resolution-rank",
+      "kind": "analytic-lemma",
+      "status": "proved-in-candidate-manuscript-using-cited-machinery",
+      "statement": "If h(a) is the stabiliser order of a parent label under H=<J^2>, cyclicity linearises the stabiliser cocycle, the orbit resolves into exactly h(a) simple modules, and R_q=(2/N) sum_{Q(a)=q} h(a)^2.",
+      "locator": "paper.tex, Section 2, Lemma 2 and equation (1)",
+      "evidence": [
+        "paper.tex",
+        "SOURCES.md",
+        "CITATION_AUDIT.md"
+      ],
+      "limits": [
+        "cyclic resolution machinery is prior work",
+        "full stabiliser size need not be the resolved multiplicity outside the cyclic setting"
+      ]
+    },
+    {
+      "id": "C4-known-charge-maximum",
+      "kind": "analytic-application",
+      "status": "proved-in-candidate-manuscript-from-cited-exact-counts",
+      "statement": "Established exact cyclic charge counts imply A_L(0)>A_L(r) for every nonzero residue r, and the resolved-rank expansion consequently gives R_q<R_0 for every nonzero q modulo N.",
+      "locator": "paper.tex, Section 3, Lemma 3 and equations (2)-(4)",
+      "evidence": [
+        "paper.tex",
+        "prior-art.md",
+        "SOURCES.md",
+        "CITATION_AUDIT.md"
+      ],
+      "limits": [
+        "the unrestricted charge formula and strict zero-residue maximum are prior work",
+        "the claimed residual contribution is their fine-sector superconducting application"
+      ]
+    },
+    {
+      "id": "C5-absolute-rank-gap",
+      "kind": "analytic-corollary",
+      "status": "proved-in-candidate-manuscript",
+      "statement": "For every even N>=4 and every nonzero q modulo N, R_0-R_q>=N/2. The proof keeps an integer gap of at least one in every applicable charge-count term, uses positivity for omitted neutral terms, and applies sum_{d|m} J_2(d)=m^2 with m=N/2.",
+      "locator": "paper.tex, Section 3, corollary following Lemma 3",
+      "evidence": [
+        "paper.tex",
+        "paper.md",
+        "CITATION_AUDIT.md",
+        "checks/revision-code-audit.md"
+      ],
+      "limits": [
+        "an elementary corollary of prior exact counting and the resolved-rank formula, not a new counting theory",
+        "N=4, q=2 is an equality example; no equality classification is claimed"
+      ]
+    },
+    {
+      "id": "C6-rank-electron-obstruction",
+      "kind": "analytic-lemma",
+      "status": "proved-in-candidate-manuscript",
+      "statement": "Under the originating electron-compatible factorisation convention, a rank mismatch excludes the two-object invertible-vortex factor and a nontrivial electron two-cycle excludes the one-object electron-fixed factor; invertible Abelian dressing preserves both obstructions.",
+      "locator": "paper.tex, Section 4, Lemma 4",
+      "evidence": [
+        "paper.tex",
+        "paper.md",
+        "review-response.md"
+      ],
+      "limits": [
+        "an elementary unpacking of the originating factor definition, not a general new categorical theory",
+        "does not classify arbitrary factorisations outside the stated convention"
+      ]
+    },
+    {
+      "id": "C7-electron-pair",
+      "kind": "analytic-lemma",
+      "status": "proved-in-candidate-manuscript",
+      "statement": "For every nonzero q, the parent label with a_0=N-1 and a_q=1 has full rotation period N; its two distinct even-subgroup orbits induce simple objects exchanged by the physical electron.",
+      "locator": "paper.tex, Section 4, Lemma 5",
+      "evidence": [
+        "paper.tex",
+        "paper.md"
+      ],
+      "limits": [
+        "the witness fails at excluded boundary N=2",
+        "no complete electron permutation of every short-orbit resolution label is claimed"
+      ]
+    },
+    {
+      "id": "C8-bounded-exact-diagnostics",
+      "kind": "finite-computational-result",
+      "status": "passed-in-recorded-local-environment-pending-final-package-gate",
+      "statement": "Direct H-orbit enumeration covers N=2,4,6,8,10; an independent dynamic program checks 5,050 charge cells for lengths 1 through 100; independent Jordan counts run through 50; exact ranks agree for every even N from 2 through 100; and the quantitative gap holds for every checked even N from 4 through 100. Normal and optimized tests and five semantic negative controls pass under CPython 3.13.5, and both public evidence files replay byte-identically.",
+      "locator": "checks/revision-code-audit.md; code/; evidence/; checks/",
+      "evidence": [
+        "checks/revision-code-audit.md",
+        "checks/test_primitive_su.py",
+        "checks/independent_verifier.py",
+        "evidence/pilot.json",
+        "evidence/formula.json"
+      ],
+      "limits": [
+        "finite exact checks are not the universal proof",
+        "the parent-orbit diagnostic does not determine electron fixation of individual resolved constituents",
+        "the computations assume the separately audited categorical resolution",
+        "final clean-extraction archive binding, remote CI, and provider parity remain publication gates"
+      ]
+    },
+    {
+      "id": "C9-historical-quality-calibration",
+      "kind": "historical-quality-assessment",
+      "status": "preserved-not-upgraded",
+      "statement": "The supplied AI-assisted review recommended minor revisions and gave a central prospective 2-star overall assessment, with a credible specialist uncertainty toward 3-star and no supported 4-star case.",
+      "locator": "ref-assessment.md; review-response.md",
+      "evidence": [
+        "ref-assessment.md",
+        "review-response.md"
+      ],
+      "limits": [
+        "not human peer review",
+        "not an official REF decision",
+        "not a correctness probability",
+        "the obstruction lemma and quantitative gap do not automatically raise the assessment"
+      ]
+    }
+  ],
+  "explicitNonClaims": [
+    "a new superconducting family",
+    "a new definition of primitivity",
+    "a new unrestricted charge-counting formula or strict charge maximum",
+    "a new general cyclic-condensation theory",
+    "an equality classification for the quantitative rank gap",
+    "absolute historical priority or a first-proof claim",
+    "complete fusion rules or crossed braiding",
+    "microscopic realisation or experimental validation",
+    "formal proof",
+    "independent human peer review",
+    "official REF status",
+    "4-star quality",
+    "completed publication or provider-byte parity"
+  ]
+}

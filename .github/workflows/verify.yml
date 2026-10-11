@@ -1,0 +1,63 @@
+name: Verify computational evidence
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Run explicit checks
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
+          PYTHONDONTWRITEBYTECODE: "1"
+          PYTHONHASHSEED: "0"
+          PYTHONOPTIMIZE: "0"
+        run: python -B checks/test_primitive_su.py
+      - name: Run checks with optimized Python
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
+          PYTHONDONTWRITEBYTECODE: "1"
+          PYTHONHASHSEED: "0"
+          PYTHONOPTIMIZE: "1"
+        run: python -B checks/test_primitive_su.py
+      - name: Reproduce checked evidence bytes
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
+          PYTHONDONTWRITEBYTECODE: "1"
+          PYTHONHASHSEED: "0"
+          PYTHONOPTIMIZE: "0"
+        run: |
+          python -B code/primitive_su_pilot.py > "$RUNNER_TEMP/pilot.json"
+          python -B code/primitive_su_formula.py > "$RUNNER_TEMP/formula.json"
+          cmp evidence/pilot.json "$RUNNER_TEMP/pilot.json"
+          cmp evidence/formula.json "$RUNNER_TEMP/formula.json"
+      - name: Retain independent verification receipt
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
+          PYTHONDONTWRITEBYTECODE: "1"
+          PYTHONHASHSEED: "0"
+          PYTHONOPTIMIZE: "0"
+        run: >-
+          python -B checks/independent_verifier.py
+          --root .
+          --output "$RUNNER_TEMP/independent-verification.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: independent-verification
+          path: ${{ runner.temp }}/independent-verification.json
+          if-no-files-found: error

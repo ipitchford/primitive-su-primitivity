@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "1.0",
+  "profile": "research-publication/v1",
+  "package": "primitive-su-primitivity",
+  "version": "1.1.0-candidate",
+  "status": "pre-freeze-candidate",
+  "targetSha256": null,
+  "publicationIdentifiers": {
+    "doi": "10.5281/zenodo.23299598",
+    "doiState": "reserved-draft-not-published-or-read-back",
+    "zenodoDraftRecord": "23299598"
+  },
+  "boundary": "Completeness of the recorded contribution, source-reading, limitation-triage and extension-scout process only; not scientific validation, formal verification, human peer review, novelty certification, REF certification, publication, provider-byte parity, or canonical readback.",
+  "assessment": {
+    "kind": "AI-assisted supplied and internal academic assessment",
+    "assessedAt": "2026-10-11",
+    "scope": "The uniform primitivity theorem, its proof dependencies, finite exact diagnostics, bounded prior art, review dispositions, and candidate packaging.",
+    "claimCeiling": "Unrefereed analytic specialist theorem; historical prospective 2-star overall with credible specialist uncertainty toward 3-star; no supported 4-star case.",
+    "limitations": [
+      "No independent human peer review.",
+      "No proof-assistant formalisation.",
+      "No universal historical-priority guarantee.",
+      "The reserved DOI belongs to an unpublished draft.",
+      "Final package hash, remote CI, provider bytes, and canonical readback remain publication obligations."
+    ]
+  },
+  "contributionMap": [
+    {
+      "claim": "For every even N=2n>=4, every nonzero fine flux sector in the stated charge-one SU(N)_N superconducting construction is primitive: it has smaller resolved rank than the neutral sector and contains a nontrivial physical-electron two-cycle.",
+      "unit": "statement",
+      "paperLocation": "Abstract; main theorem; Sections 1-4",
+      "searches": [
+        {
+          "date": "2026-10-11",
+          "query": "\"every nonzero flux sector\" \"SU(2n)\" primitive",
+          "corpus": "live general web index plus direct versioned arXiv primary texts"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"R_q<R_0\" \"SU(N)_N\"",
+          "corpus": "live general web index"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"charge-2ne primitive\" \"rigorous proof\"",
+          "corpus": "live general web index"
+        }
+      ],
+      "closestPriorWork": "Gao et al., arXiv:2610.10679v1, Sections IV.5 and VII.4, define the family and target and explicitly defer the general proof. Established count and resolution sources supply ingredients, but the bounded search did not locate the complete fine-sector rank-plus-electron-pair conclusion.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "The resolved-rank method combines cyclic stabiliser resolution with exact charge counts and a physical-electron witness, while preserving the fine charge grading rather than a grouped quotient count.",
+      "unit": "method",
+      "paperLocation": "Sections 2-4",
+      "searches": [
+        {
+          "date": "2026-10-11",
+          "query": "\"SU(N)_N\" simple current resolved sector rank inequality",
+          "corpus": "live general web index; FRS and Closset primary texts"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"resolved rank\" \"SU(N)\" simple current condensation",
+          "corpus": "live general web index"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"vortex sector\" \"dynamical anyon sector\" factorization electron superconductor",
+          "corpus": "live general web index and originating arXiv source"
+        }
+      ],
+      "closestPriorWork": "Fuchs--Runkel--Schweigert supply the orbit and twisted-stabiliser resolution machinery; Elashvili--Jibladze--Pataraia and Muratovic-Ribic--Wang supply the exact charge count; Closset and collaborators supply close charge/orbit/stabiliser/Jordan quotient machinery but group fine sectors in the relevant specialization.",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "For every even N>=4 and nonzero q, the quantitative resolved-rank gap satisfies R_0-R_q>=N/2.",
+      "unit": "statement",
+      "paperLocation": "Section 3, corollary following Lemma 3",
+      "searches": [
+        {
+          "date": "2026-10-11",
+          "query": "\"A_L(0)\" \"A_L(r)\" Ramanujan multiset cyclic",
+          "corpus": "live general web index and primary counting sources"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"multisubset\" zero sum maximum cyclic group quantitative",
+          "corpus": "live general web index"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"a_k(n,m)\" \"Proposition 8\" Elashvili gap",
+          "corpus": "live general web index and the 1999 primary paper"
+        }
+      ],
+      "closestPriorWork": "Elashvili--Jibladze--Pataraia Proposition 8 supplies an integer charge-count gap of at least one. The N/2 bound is an elementary corollary after inserting that fact into the resolved-rank formula and using the standard Jordan-totient divisor sum; no exact earlier resolved-rank statement was located in the bounded search.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "A rank mismatch together with a nontrivial electron two-cycle obstructs both allowed electron-compatible invertible-vortex factor types, and invertible Abelian dressing preserves the obstructions.",
+      "unit": "identification",
+      "paperLocation": "Section 4, Lemma 4",
+      "searches": [
+        {
+          "date": "2026-10-11",
+          "query": "\"vortex sector\" \"dynamical anyon sector\" factorization electron superconductor",
+          "corpus": "live general web index and Gao et al. arXiv:2610.10679v1"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"electron\" \"rank\" \"primitive\" superconductor vortex sector",
+          "corpus": "live general web index"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"rank inequality\" \"primitive\" superconductivity anyon",
+          "corpus": "live general web index"
+        }
+      ],
+      "closestPriorWork": "The two factor types and electron-compatible primitivity convention are due to Gao et al. The lemma is a transparent reusable unpacking of that definition rather than a new general categorical theory.",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "The full-period parent label a_0=N-1, a_q=1 supplies two distinct simple objects exchanged by the physical electron in every nonzero sector.",
+      "unit": "proof",
+      "paperLocation": "Section 4, Lemma 5",
+      "searches": [
+        {
+          "date": "2026-10-11",
+          "query": "site:arxiv.org/abs/2610.10679 SC-sharp SU(2n) primitive superconductivity",
+          "corpus": "live general web index plus direct versioned source retrieval"
+        },
+        {
+          "date": "2026-10-11",
+          "query": "\"every nonzero flux sector\" \"SU(2n)\" primitive",
+          "corpus": "live general web index"
+        }
+      ],
+      "closestPriorWork": "The originating source supplies small-N illustrations but defers the all-parameter proof. FRS supplies orbit separation; the explicit all-sector full-period witness was not located in the bounded search.",
+      "verdict": "new-in-bounded-search"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Gao, Wang, Yang, Han and Vishwanath, SC-sharp: superconductivity intertwined with topological order, arXiv:2610.10679v1 (2026)",
+      "usedFor": "Target primitivity definition, charge-one construction, fine sectors, proposed SU(2n)_{2n} family, and the explicitly deferred proof.",
+      "readWhat": "Version 1 HTML, Sections IV.5 and VII.4 and the closing open-directions paragraph, including the hypotheses and factorisation convention used here.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/html/2610.10679v1; SOURCES.md"
+    },
+    {
+      "citation": "Gao, Wang, Yang and Wu, Topological Charge-2ne Superconductors, arXiv:2512.21325v4 (2026)",
+      "usedFor": "Originating construction and the electron-retaining fixed-point convention used by the candidate.",
+      "readWhat": "Version 4 full text passages defining the construction and the later fixed-point convention; older version-one N=4 multiplicity was checked only to resolve the version difference.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/pdf/2512.21325v4; SOURCES.md"
+    },
+    {
+      "citation": "Elashvili, Jibladze and Pataraia, Combinatorics of necklaces and Hermite reciprocity, Journal of Algebraic Combinatorics 10 (1999), 173-188",
+      "usedFor": "Exact all-charge weak-composition count, roots-of-unity derivation, strict zero-residue maximum, and the unit integer gap used by the quantitative corollary.",
+      "readWhat": "Page 174 equation (2), pages 176-177 Theorem 1 and equation (4), and page 187 Proposition 8, including the substitutions matching A_L(r).",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://rmi.tsu.ge/~jib/pubs/elajipa.pdf; CITATION_AUDIT.md section 3"
+    },
+    {
+      "citation": "Muratovic-Ribic and Wang, The multisubset sum problem for finite abelian groups, arXiv:1305.3259v1 (2013)",
+      "usedFor": "A second exact finite-group-character route to the all-charge count.",
+      "readWhat": "Theorem 1 on page 2, its finite-abelian-group hypotheses, and the specialization to Z/L with subset size L.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/pdf/1305.3259; SOURCES.md"
+    },
+    {
+      "citation": "Brualdi and Newman, An enumeration problem for a congruence equation, Journal of Research of the National Bureau of Standards 74B (1970), 37-40",
+      "usedFor": "Exact neutral weak-composition count.",
+      "readWhat": "Pages 37-39, especially the main theorem and its congruence/counting assumptions.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://nvlpubs.nist.gov/nistpubs/jres/74B/jresv74Bn1p37_A1b.pdf; SOURCES.md"
+    },
+    {
+      "citation": "Fuchs, Runkel and Schweigert, TFT construction of RCFT correlators III: Simple currents, hep-th/0403157 (2004)",
+      "usedFor": "Orbit equivalence, disjoint constituents, and the twisted stabiliser endomorphism algebra underlying cyclic resolution.",
+      "readWhat": "Remark 3.19(i), Lemma 4.6, Proposition 4.7, Definition 4.8, and Remark 4.10, including the untwisted-stabiliser caveat.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/pdf/hep-th/0403157; CITATION_AUDIT.md section 4"
+    },
+    {
+      "citation": "Closset, Furrer, Keyes and Khlaif, The 3d A-model and generalised symmetries, Part I, arXiv:2501.11665v3 (2025)",
+      "usedFor": "Close simple-current orbit, stabiliser, charge, and Jordan-totient quotient-counting machinery and the level convention.",
+      "readWhat": "Section 3.1.1 equations (3.14)-(3.25), the three condensation steps in Section 3.1.2, and Section 3.1.4 equations (3.39)-(3.47), with the k=N, K=2N, r=N/2 specialization checked.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/pdf/2501.11665v3; CITATION_AUDIT.md section 5"
+    },
+    {
+      "citation": "Closset, Furrer and Khlaif, One-form symmetries and the 3d N=2 A-model, arXiv:2405.18141v4 (2024)",
+      "usedFor": "Additional quotient-count and discrete-theta context.",
+      "readWhat": "Equations (3.21)-(3.35), Section 3.4 equations (3.84)-(3.101), and the Jordan-totient discussion.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/pdf/2405.18141v4; SOURCES.md"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "The original manuscript compressed the physical-to-categorical bridge on which every rank count depends.",
+      "closingQuestion": "Can the existing induction and Hom-space argument be stated self-containedly without changing the construction?",
+      "triedOrSearched": "Reconstructed the charge-one induction step and checked it against the supplied categorical audit.",
+      "estimatedCost": "bounded exposition and proof audit, completed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The original exposition did not identify exact published predecessors for the charge formula, strict maximum, or close quotient counts.",
+      "closingQuestion": "Can the imported statements be matched exactly to primary passages and the residual contribution narrowed?",
+      "triedOrSearched": "Read the EJP, Muratovic-Ribic--Wang, Brualdi--Newman, FRS and Closset passages and inserted exact locators and convention comparisons.",
+      "estimatedCost": "bounded source audit and editorial revision, completed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The source definition permits Abelian-dressed factor types, while the original proof discussed only the undressed representatives.",
+      "closingQuestion": "Does invertible dressing preserve the rank and electron-action obstructions?",
+      "triedOrSearched": "Checked the originating factor convention and isolated the preservation statement as Lemma 4.",
+      "estimatedCost": "less than one hour, completed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The legacy electron_fixed diagnostic claimed more than parent-orbit invariance establishes.",
+      "closingQuestion": "Can the output be renamed to the exact computed property and protected against regression?",
+      "triedOrSearched": "Removed the old field, added resolved_objects_over_electron_invariant_parent_orbits, removed the dependent exclusion field, and added normal and optimized semantic negative controls.",
+      "estimatedCost": "bounded code and test repair, completed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The strict rank inequality did not quantify the gap.",
+      "closingQuestion": "Can the known integer charge gap and Jordan-totient identity give a uniform bound without new machinery?",
+      "triedOrSearched": "Derived and independently audited R_0-R_q>=N/2 term by term; checked it for every even N through 100; retained only the N=4,q=2 equality example.",
+      "estimatedCost": "bounded analytic extension, completed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The two-obstruction logic was embedded in the family-specific proof rather than stated for reuse.",
+      "closingQuestion": "Can it be isolated without overstating it as new categorical theory?",
+      "triedOrSearched": "Compared it with the originating definition and adopted the elementary rank--electron criterion as Lemma 4 with explicit hypotheses and Abelian dressing.",
+      "estimatedCost": "bounded abstraction, completed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The candidate does not classify equality in R_0-R_q>=N/2.",
+      "closingQuestion": "Can all equality cases be characterised from the divisor decomposition?",
+      "triedOrSearched": "Verified the proof of the lower bound and the N=4,q=2 equality example; no general equality analysis was established.",
+      "estimatedCost": "new number-theoretic classification beyond a two-hour repair",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The theorem needs only the lower bound, and an equality classification would be a distinct research result.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "No full fusion-rule, crossed-braiding, or arbitrary-factorisation classification is proved.",
+      "closingQuestion": "Can the construction be classified beyond the two electron-compatible invertible-vortex types in the originating definition?",
+      "triedOrSearched": "Audited the exact target definition and kept the theorem restricted to it; close categorical sources do not supply the broader classification.",
+      "estimatedCost": "substantial new categorical research",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Changing the factorisation universe or computing full fusion data would materially change the theorem.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "No microscopic realisation or experimental validation is supplied.",
+      "closingQuestion": "Can the categorical family be derived from a microscopic model and tied to measurements?",
+      "triedOrSearched": "Kept the manuscript at the categorical theorem level; no microscopic or experimental claim was needed or established.",
+      "estimatedCost": "separate theoretical and experimental programme",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The candidate proves a categorical property of a proposed family, not material realisation.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The universal theorem is not proof-assistant formalised.",
+      "closingQuestion": "Can the induction bridge, cyclic resolution and number-theoretic count be mechanised end to end?",
+      "triedOrSearched": "Retained a detailed written proof, targeted mathematical audit, exact diagnostics, and explicit separation of analytic and computational claims; no formal development exists.",
+      "estimatedCost": "major formalisation project",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Formalisation would require substantial new infrastructure and is not a routine publication repair.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "No independent human peer review or unaffiliated reproduction has occurred.",
+      "closingQuestion": "Will a qualified external specialist review the final bytes and reproduce the frozen package?",
+      "triedOrSearched": "Completed supplied AI-assisted review, targeted internal audits, independent local finite implementations, and explicit status labelling; no unsolicited outreach was authorised.",
+      "estimatedCost": "externally dependent review process",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Internal publication work cannot manufacture external independence or human peer review.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The bounded search cannot exclude private, inaccessible, unindexed, simultaneous, or differently phrased prior work.",
+      "closingQuestion": "Can absolute historical priority be certified?",
+      "triedOrSearched": "Executed sixteen formula-, theorem-, factorisation-, and title-based queries and read the load-bearing primary sources; the originating proposal was only four days old.",
+      "estimatedCost": "not finitely closable by further bounded search",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The package therefore uses bounded-search language and makes no first-proof or absolute-priority claim.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The supplied prospective quality assessment did not establish 4-star quality and placed the central judgement at 2-star.",
+      "closingQuestion": "Do later applications or independent specialist review establish broader durable significance?",
+      "triedOrSearched": "Preserved the original dimension-specific assessment and evaluated the adopted elementary extensions without inferring an uplift.",
+      "estimatedCost": "externally dependent and longitudinal",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Exposition repair, an elementary corollary, and a reusable formulation do not themselves demonstrate field-leading significance.",
+      "whyNotClosedNow": ""
+    }
+  ],
+  "extensionScout": {
+    "by": "Codex internal publication-stage mathematical and prior-art assessment under human direction",
+    "date": "2026-10-11",
+    "proposals": [
+      "State the rank-plus-electron obstruction as a reusable lemma.",
+      "Extract a uniform quantitative lower bound for R_0-R_q.",
+      "Classify equality cases for the quantitative bound.",
+      "Seek broader fusion, microscopic, or formalised extensions."
+    ],
+    "actions": [
+      "Adopted the elementary rank--electron obstruction with explicit electron-compatible and Abelian-dressing hypotheses.",
+      "Proved and independently audited R_0-R_q>=N/2 using the known integer charge gap and Jordan-totient identity; retained N=4,q=2 only as an equality example.",
+      "Did not claim an equality classification because none was established.",
+      "Kept full fusion data, microscopic realisation, and formalisation open because they are separate non-cheap research programmes.",
+      "Preserved the historical 2-star central assessment and no-4-star boundary; no automatic quality uplift was inferred."
+    ]
+  },
+  "unresolvedFatal": [],
+  "obligations": [
+    {
+      "id": "claim-scope-semantics",
+      "outcome": "adequate-on-candidate-manuscript",
+      "scope": "Even N>=4, fine nonzero charge sectors, charge-one construction, physical electron retained, originating electron-compatible factor convention.",
+      "rationale": "The manuscript and public claim records preserve every load-bearing hypothesis and the N=2 exclusion.",
+      "commandIds": [],
+      "evidence": ["paper.tex", "CLAIMS.json", "ASSURANCE.md"]
+    },
+    {
+      "id": "prior-art",
+      "outcome": "adequate-with-bounded-search-limit",
+      "scope": "Originating theorem proposal, exact charge counts, cyclic resolution, quotient-count machinery, obstruction aliases, and formula fingerprints.",
+      "rationale": "Load-bearing primary passages were read and exact collisions are credited; universal historical priority is not claimed.",
+      "commandIds": [],
+      "evidence": ["SOURCES.md", "CITATION_AUDIT.md", "prior-art.md"]
+    },
+    {
+      "id": "replay",
+      "outcome": "adequate-in-recorded-local-environment-pending-clean-freeze",
+      "scope": "Normal and optimized tests, independent finite verifier, and byte-identical replay of both public evidence files.",
+      "rationale": "Seven tests pass in each mode under CPython 3.13.5; bounded counts, rank vectors, gap checks, and evidence reproduction agree exactly.",
+      "commandIds": ["tests-normal", "tests-optimized", "independent-normal", "independent-optimized", "pilot-replay", "formula-replay"],
+      "evidence": ["REPLAY_RECEIPT.md", "ENVIRONMENT.txt", "checks/proof-and-replay.md", "checks/revision-code-audit.md", "evidence/pilot.json", "evidence/formula.json"]
+    },
+    {
+      "id": "negative-controls",
+      "outcome": "adequate-in-recorded-local-environment",
+      "scope": "Charge-cell corruption, wrong rotation group, legacy fixed-object field, quantitative-gap corruption, and invalid rank-only N=2 inference.",
+      "rationale": "All five semantic corruptions are detected in normal and optimized suites.",
+      "commandIds": ["tests-normal", "tests-optimized"],
+      "evidence": ["checks/test_primitive_su.py", "checks/revision-code-audit.md"]
+    },
+    {
+      "id": "manifest-archive",
+      "outcome": "pending-final-package-freeze",
+      "scope": "Complete file inventory, sizes, hashes, clean-extraction gate, immutable archive, and provider parity.",
+      "rationale": "Scientific files and local checks are stable, but the final PDF, metadata, manifest, archive, CI and provider states remain parent-owned publication gates.",
+      "commandIds": ["manifest-check", "archive-preflight", "provider-asset-parity"],
+      "evidence": []
+    },
+    {
+      "id": "manuscript",
+      "outcome": "adequate-on-six-page-candidate-pending-final-manifest",
+      "scope": "Review dispositions, final source, PDF build, text preflight, page-by-page visual inspection, accessible manuscript, and final hashes.",
+      "rationale": "The revised TeX, Markdown, six-page PDF and QA identities are bound in PROVENANCE.md; the PDF built in two passes with zero overfull boxes and every page was inspected. Final archive and manifest binding remain publication-lane obligations.",
+      "commandIds": ["pdf-build", "pdf-tex-preflight", "pdf-visual-qa"],
+      "evidence": ["paper.tex", "paper.pdf", "paper.md", "publication/qa.json", "review-response.md"]
+    },
+    {
+      "id": "licence-provenance",
+      "outcome": "adequate-subject-to-final-manifest",
+      "scope": "Anonymous scholarly creator, maintainer/publisher distinction, frozen intake identities, CC0/MIT component map, and third-party exclusions.",
+      "rationale": "Public documentation records source-to-release transformation and excludes the private third-party review and discovery payload from relicensing or redistribution.",
+      "commandIds": [],
+      "evidence": ["PROVENANCE.md", "LICENSE", "LICENSE-CODE", "LICENSES.md", "PUBLIC_DOMAIN.md"]
+    },
+    {
+      "id": "publication",
+      "outcome": "doi-reserved-publication-pending",
+      "scope": "DOI, GitHub release, Zenodo publication, public asset parity, resolver and canonical readback.",
+      "rationale": "DOI 10.5281/zenodo.23299598 is reserved on an unpublished draft; no public-release inference is made.",
+      "commandIds": ["remote-ci", "github-release", "zenodo-publish", "provider-asset-parity", "canonical-readback"],
+      "evidence": ["STATUS.md"]
+    }
+  ]
+}

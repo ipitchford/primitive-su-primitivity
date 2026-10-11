@@ -1,0 +1,27 @@
+Primitive SU primitivity candidate computational environment
+============================================================
+
+Package version: 1.1.0-candidate
+Recorded local run: 2026-10-11
+Python implementation: CPython 3.13.5
+Recorded platform: macOS-27.0.1-arm64-arm-64bit-Mach-O
+Recorded interpreter: /opt/homebrew/opt/python@3.13/bin/python3.13
+Python dependencies: standard library only
+
+Deterministic environment variables used for the test and verifier runs:
+
+  LANG=C
+  LC_ALL=C
+  PYTHONDONTWRITEBYTECODE=1
+  PYTHONHASHSEED=0
+  PYTHONOPTIMIZE=0 or 1, as identified by the command
+
+The public programs do not require a package installation, network access, a
+compiler, or third-party Python modules. A different compatible Python 3
+interpreter may run the checks, but only the environment above describes the
+recorded local replay. The GitHub workflow is a separate remote environment;
+its result must not be inferred from this file.
+
+PDF build and page inspection are recorded separately in publication/qa.json.
+Final clean-extraction archive gating, remote CI, provider publication,
+provider-byte parity, and canonical readback are separate release gates.

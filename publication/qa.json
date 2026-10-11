@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-10-11T14:32:41.684Z",
+  "pdfSha256": "a8e27f8b1f0e2ec7fb99b7dd70e46105f0842e880325ec657b8eb06a7449b8c2",
+  "pages": 6,
+  "compiler": "Desktop compiler success; pdfLaTeX two passes",
+  "visualInspection": "All six rendered pages inspected; centered title, legible equations, complete proof and references; no clipping or collisions.",
+  "overfullBoxes": 0,
+  "mathematicalBoundary": "Layout and compilation are not theorem verification."
+}
